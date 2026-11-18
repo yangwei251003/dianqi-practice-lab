@@ -1,0 +1,66 @@
+{
+  "testedAt": "2026-11-18T08:16:15.441Z",
+  "target": "https://yangwei251003.github.io/dianqi-practice-lab/",
+  "full": false,
+  "engine": "chrome",
+  "scenes": [
+    {
+      "id": 2,
+      "mode": "3d",
+      "meters": 5,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 7,
+      "mode": "3d",
+      "meters": 5,
+      "goals": 3,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 13,
+      "mode": "3d",
+      "meters": 6,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 23,
+      "mode": "3d",
+      "meters": 7,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 48,
+      "mode": "3d",
+      "meters": 9,
+      "goals": 3,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    }
+  ],
+  "checks": [
+    "发布版目录只列正式开放工位，勾选预习才展示全部 48 项",
+    "首页与首屏加载",
+    "六阶段路线、型号索引",
+    "JSON 下载导入、确认替换、损坏备份保护",
+    "打印样式与真实 PDF 导出",
+    "390px 触控导航、窄屏布局、在独立移动配置导入桌面备份并还原时间与读数",
+    "图形能力不足时明确二维降级，仍可操作",
+    "三维画布选中并操作热点实际插拔导线；逐对点击六端子搭成串联实测两灯各 12 V、键盘视图切换、漫画定位部件",
+    "RC 误操作与开路恢复真实控件读数、三维拖动与缩放改变像素画面、相机复位"
+  ],
+  "failures": [],
+  "version": "157.0.8103.80"
+}
