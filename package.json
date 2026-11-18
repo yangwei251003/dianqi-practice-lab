@@ -1,0 +1,32 @@
+{
+  "name": "dianqi-practice-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "tsx --test tests/*.test.ts src/visual/three/*.test.ts",
+    "test:browsers": "tsx scripts/browser-check.ts",
+    "audit:content": "tsx scripts/content-report.ts"
+  },
+  "dependencies": {
+    "lucide-react": "0.552.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/three": "0.187.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "playwright": "1.65.1",
+    "puppeteer-core": "25.18.1",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vite": "8.3.8"
+  }
+}

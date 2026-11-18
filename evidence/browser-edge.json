@@ -1,0 +1,50 @@
+{
+  "testedAt": "2026-11-18T08:08:40.448Z",
+  "target": "local-production-build",
+  "full": true,
+  "engine": "edge",
+  "scenes": [
+    {
+      "id": 2,
+      "mode": "3d",
+      "meters": 5,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 7,
+      "mode": "3d",
+      "meters": 5,
+      "goals": 3,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 16,
+      "mode": "3d",
+      "meters": 7,
+      "goals": 3,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 48,
+      "mode": "3d",
+      "meters": 9,
+      "goals": 3,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    }
+  ],
+  "checks": [
+    "首页与首屏加载",
+    "六阶段路线、型号索引"
+  ],
+  "failures": [],
+  "version": "157.0.4341.60"
+}

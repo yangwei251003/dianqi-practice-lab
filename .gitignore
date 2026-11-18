@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.work/
+.env*
+*.log
+*.tsbuildinfo
+提示词.txt

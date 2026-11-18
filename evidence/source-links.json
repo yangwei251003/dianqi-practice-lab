@@ -1,0 +1,335 @@
+{
+  "checkedAt": "2026-11-18T08:10:40.373Z",
+  "method": "仅请求厂家链接的初始内容；HTTP 可达性不构成技术核验或素材授权。",
+  "results": [
+    {
+      "url": "https://api.grundfos.com/literature/Grundfosliterature-5269431.pdf",
+      "model": "LC 221.2.230.1.10.30",
+      "http": 206,
+      "type": "application/octet-stream,application/pdf",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://assets.danfoss.com/documents/latest/198797/BC364229688105en-000201.pdf",
+      "model": "AK-CC55 Single Coil（084B4082）",
+      "http": 206,
+      "type": "application/pdf",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://cache.industry.siemens.com/dl/files/179/109789179/att_1045936/v3/A6V10350338.pdf",
+      "model": "RDF302（S55770-T238）",
+      "http": 206,
+      "type": "application/pdf",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://catalog.orientalmotor.com/en-us/item/ll-categories-shop-online-stepper-motor-components/e-bipolar-stepper-motors-for-cvd-multi-axis-driver/pkp244d15a2",
+      "model": "PKP244D15A2",
+      "http": null,
+      "type": "",
+      "status": "本次本机读回超时或不可达，不据此判断型号真伪"
+    },
+    {
+      "url": "https://download.se.com/files?p_Doc_Ref=AMTED310010EN&p_File_Name=PremSet_AMTED310010EN_0320.pdf&p_enDocType=Catalog",
+      "model": "Easergy Flair 22D",
+      "http": null,
+      "type": "",
+      "status": "本次本机读回超时或不可达，不据此判断型号真伪"
+    },
+    {
+      "url": "https://download.se.com/files?p_Doc_Ref=HRB1684301&p_File_Name=HRB1684301-18.pdf&p_enDocType=User+guide",
+      "model": "PowerLogic PM5560（METSEPM5560）",
+      "http": 206,
+      "type": "application/pdf",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://eshop.se.com/in/lc2d09bd.html",
+      "model": "TeSys D LC2D09BD",
+      "http": null,
+      "type": "",
+      "status": "本次本机读回超时或不可达，不据此判断型号真伪"
+    },
+    {
+      "url": "https://files.omron.eu/downloads/latest/datasheet/en/e3z_compact_photoelectric_sensor_with_built-in_amplifier_datasheet_en.pdf",
+      "model": "E3Z-D62 2M",
+      "http": 206,
+      "type": "application/pdf",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://industrial.omron.co.uk/en/products/E3Z-T61-2M",
+      "model": "E3Z-T61 2M",
+      "http": null,
+      "type": "",
+      "status": "本次本机读回超时或不可达，不据此判断型号真伪"
+    },
+    {
+      "url": "https://latrivenetacavi.nexans.com/en/products/residential-and-commercial/residential-commercial-Eca-class/U-1000-R2V38500/product~084123001~.html",
+      "model": "U-1000 R2V 3G2,5 · 084123001",
+      "http": null,
+      "type": "",
+      "status": "本次本机读回超时或不可达，不据此判断型号真伪"
+    },
+    {
+      "url": "https://library.e.abb.com/public/067b20899fab40d29e7cad8d3a15aa86/9AAU00000000058%20Process%20performance%20Aluminum%20motors%20EN%2011-2023_NEW-1_lowres.pdf",
+      "model": "M3AA 90LB 4 · 3GAA092520-ASE",
+      "http": 206,
+      "type": "application/pdf",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://library.e.abb.com/public/99b013420be196edc12578d300226c23/2CDC111128D0201.pdf",
+      "model": "CT-SDS.23S · 1SVR730211R2300",
+      "http": 206,
+      "type": "application/pdf",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://media.cedes.com/filer_public/7c/9c/7c9c368b-99f0-4763-b04c-3d662edb6887/001208en_db_cegardmini_mod_v24.pdf",
+      "model": "cegard/Mini-MOD（2000 mm，36 光学元件型）",
+      "http": 206,
+      "type": "application/pdf",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://na.industrial.panasonic.com/products/capacitors/aluminum-electrolytic-capacitors/lineup/aluminum-electrolytic-capacitors-radial-lead-type/series/83367/model/83683",
+      "model": "EEU-FR1E102",
+      "http": null,
+      "type": "",
+      "status": "本次本机读回超时或不可达，不据此判断型号真伪"
+    },
+    {
+      "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/his/en-us/products/gas-and-flame-detection/documents/ss01018stand_e3point_spec_sheet_standalone_flr_11_26_12.pdf?download=false",
+      "model": "E3Point E3SA（独立式，CO 配置）",
+      "http": 206,
+      "type": "application/pdf",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://selinc.com/api/download/10734/?lang=en",
+      "model": "SEL-751",
+      "http": null,
+      "type": "",
+      "status": "本次本机读回超时或不可达，不据此判断型号真伪"
+    },
+    {
+      "url": "https://shop.se.com/pro/ae/en/product/a9mem3155-iem3155-energy-meter-63-a-modbus-1-digital-i-1-digital-o-multi-tariff-mid/",
+      "model": "Acti9 iEM3155 · A9MEM3155",
+      "http": 200,
+      "type": "text/html",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://shop.se.com/pro/us/en/product/iec-contactor-tesys-deca-nonreversing-9a-5hp-at-480vac-up-to-100ka-sccr-3-phase-3-no-24vdc-coil-open-style/",
+      "model": "TeSys D LC1D09BD",
+      "http": 200,
+      "type": "text/html",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://shop.se.com/pro/us/en/product/incandescent-bulb-harmony-xb4-ba-9s-clear-24v-ac-dc/",
+      "model": "Harmony DL1CE024",
+      "http": 206,
+      "type": "text/html",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://shop.se.com/pro/us/en/product/variable-speed-drive-altivar-machine-atv320-1-5kw-380-to-500v-3-phases-compact/",
+      "model": "Altivar Machine ATV320U15N4C",
+      "http": 206,
+      "type": "text/html",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://www.canadiansolar.com/na/wp-content/uploads/sites/3/2020/08/Installation_Manual_of_Standard_Solar_Modules_en.pdf",
+      "model": "CS6K-300MS",
+      "http": 206,
+      "type": "application/pdf",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://www.cyberpower.com/eu/en/product/sku/CP1500EPFCLCD",
+      "model": "CP1500EPFCLCD",
+      "http": 200,
+      "type": "text/html",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://www.econolite.com/wp-content/uploads/2026/09/Cobalt_Rackmount_datasheet_2026.pdf",
+      "model": "Cobalt Rackmount ATC（TS2 Type-1 型）",
+      "http": 206,
+      "type": "application/pdf",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://www.fluke.com/en-us/product/electrical-testing/basic-testers/prv240-proving-unit",
+      "model": "PRV240",
+      "http": null,
+      "type": "",
+      "status": "本次本机读回超时或不可达，不据此判断型号真伪"
+    },
+    {
+      "url": "https://www.fluke.com/en-us/product/electrical-testing/digital-multimeters/fluke-115",
+      "model": "115",
+      "http": null,
+      "type": "",
+      "status": "本次本机读回超时或不可达，不据此判断型号真伪"
+    },
+    {
+      "url": "https://www.fronius.com/en-gb/uk/solar-energy/installers-partners/technical-data/all-products/system-monitoring/hardware/fronius-smart-meter/fronius-smart-meter-ts-65a-3",
+      "model": "Smart Meter TS 65A-3",
+      "http": null,
+      "type": "",
+      "status": "本次本机读回超时或不可达，不据此判断型号真伪"
+    },
+    {
+      "url": "https://www.ifm.cn/cn/zh/product/IFS204",
+      "model": "IFS204 (IFB3004BBPKG/US-104)",
+      "http": null,
+      "type": "",
+      "status": "本次本机读回超时或不可达，不据此判断型号真伪"
+    },
+    {
+      "url": "https://www.ifm.cn/cn/zh/product/PS3208",
+      "model": "PS3208",
+      "http": null,
+      "type": "",
+      "status": "本次本机读回超时或不可达，不据此判断型号真伪"
+    },
+    {
+      "url": "https://www.lem.com/sites/default/files/products_datasheets/dvl_1000_v7.pdf",
+      "model": "DVL 1000",
+      "http": 206,
+      "type": "application/pdf",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://www.leuze.com.cn/zh-cn/ams-304i-200-h/50113683",
+      "model": "AMS 304i 200 H（50113683）",
+      "http": 200,
+      "type": "text/html",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://www.phoenixcontact.com/en-gb/products/feed-through-terminal-block-ut-25-3044076",
+      "model": "UT 2,5 · 3044076",
+      "http": 200,
+      "type": "text/html",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://www.proface.com/en/product/spec/EXN75T3H",
+      "model": "EXN75T3H",
+      "http": null,
+      "type": "",
+      "status": "本次本机读回超时或不可达，不据此判断型号真伪"
+    },
+    {
+      "url": "https://www.proface.com/en/product/spec/SR2B121BD",
+      "model": "Zelio Logic SR2B121BD",
+      "http": null,
+      "type": "",
+      "status": "本次本机读回超时或不可达，不据此判断型号真伪"
+    },
+    {
+      "url": "https://www.proface.com/en/product/spec/VPL06N",
+      "model": "VPL06N",
+      "http": 200,
+      "type": "text/html",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://www.stamford-avk.com/sites/stamfordavk/files/ESA056E881_Rev_F.pdf",
+      "model": "S4L1D-G4 Wdg.311 / AS440",
+      "http": null,
+      "type": "",
+      "status": "本次本机读回超时或不可达，不据此判断型号真伪"
+    },
+    {
+      "url": "https://www.steinel.com.au/products/is-180-2?variant=47130508558510",
+      "model": "IS 180-2（034580，炭灰色）",
+      "http": 200,
+      "type": "text/html",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://www.tacocomfort.com/documents/FileLibrary/100-1.8.pdf",
+      "model": "007-F5",
+      "http": 206,
+      "type": "application/pdf",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://www.tesla.com/sites/default/files/pdfs/powerwall/Powerwall_2_AC_GW2_NA_EN_Installation_Manual.pdf",
+      "model": "Powerwall 2 AC",
+      "http": 206,
+      "type": "application/pdf",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/drv8871.pdf",
+      "model": "DRV8871DDAR",
+      "http": 206,
+      "type": "application/pdf",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/lm2577.pdf",
+      "model": "LM2577T-ADJ/NOPB",
+      "http": 206,
+      "type": "application/pdf",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/lm2596.pdf",
+      "model": "LM2596T-ADJ/NOPB",
+      "http": 206,
+      "type": "application/pdf",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://www.ti.com/lit/ug/sluubk0b/sluubk0b.pdf",
+      "model": "BQ40Z50-R2",
+      "http": 206,
+      "type": "application/pdf",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://www.ti.com/lit/ug/tiduay6e/tiduay6e.pdf",
+      "model": "TIDM-HV-1PH-DCAC",
+      "http": 206,
+      "type": "application/pdf",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://www.ti.com/lit/ug/tidufe6a/tidufe6a.pdf",
+      "model": "TIDA-010939",
+      "http": 206,
+      "type": "application/pdf",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://www.vestas.com/content/dam/vestas-com/cn/product-/2MWfinal.pdf.coredownload.inline.pdf",
+      "model": "V90-2.0 MW IEC IIA / IEC S",
+      "http": 200,
+      "type": "application/pdf",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://www.victronenergy.com/media/pg/Manual_BlueSolar_MPPT_75-10_up_to_100-20/en/technical-specifications.html",
+      "model": "BlueSolar MPPT 100/20",
+      "http": 206,
+      "type": "text/html",
+      "status": "公共链接可读"
+    },
+    {
+      "url": "https://www.vishay.com/docs/98731/kbu4.pdf",
+      "model": "KBU4G",
+      "http": 206,
+      "type": "application/pdf",
+      "status": "公共链接可读"
+    }
+  ]
+}

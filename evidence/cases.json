@@ -1,0 +1,1346 @@
+[
+  {
+    "id": 1,
+    "title": "开工判断",
+    "model": "PRV240",
+    "source": "https://www.fluke.com/en-us/product/electrical-testing/basic-testers/prv240-proving-unit",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常",
+        "passed": true
+      },
+      {
+        "name": "误操作",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复",
+        "passed": true
+      },
+      {
+        "name": "迁移｜两路隔离仅 1 s，记录约 8.8 V 并验证工单被拒",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 2,
+    "title": "24 V 照明板串并联",
+    "model": "Harmony DL1CE024",
+    "source": "https://shop.se.com/pro/us/en/product/incandescent-bulb-harmony-xb4-ba-9s-clear-24v-ac-dc/",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常",
+        "passed": true
+      },
+      {
+        "name": "误操作",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复",
+        "passed": true
+      },
+      {
+        "name": "迁移｜把 A2、B2 接正极，两灯倒向并联，各耗 2.6 W",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 3,
+    "title": "端子追线改错",
+    "model": "UT 2,5 · 3044076",
+    "source": "https://www.phoenixcontact.com/en-gb/products/feed-through-terminal-block-ut-25-3044076",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常",
+        "passed": true
+      },
+      {
+        "name": "误操作",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复",
+        "passed": true
+      },
+      {
+        "name": "迁移｜让 X1.2 只在 X2.1、X2.3 同时回响",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "已开放"
+  },
+  {
+    "id": 4,
+    "title": "万用表断点",
+    "model": "115",
+    "source": "https://www.fluke.com/en-us/product/electrical-testing/digital-multimeters/fluke-115",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常",
+        "passed": true
+      },
+      {
+        "name": "误操作",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复",
+        "passed": true
+      },
+      {
+        "name": "迁移｜回线断开时只跨 A、C，测得完好上游路径 1.2 Ω",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 5,
+    "title": "RC 时间常数",
+    "model": "EEU-FR1E102",
+    "source": "https://na.industrial.panasonic.com/products/capacitors/aluminum-electrolytic-capacitors/lineup/aluminum-electrolytic-capacitors-radial-lead-type/series/83367/model/83683",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常",
+        "passed": true
+      },
+      {
+        "name": "误操作",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复",
+        "passed": true
+      },
+      {
+        "name": "迁移｜换 1200 µF、2 kΩ，充电 2.4 s 到约 7.59 V",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "已开放"
+  },
+  {
+    "id": 6,
+    "title": "三相照明负荷",
+    "model": "Acti9 iEM3155 · A9MEM3155",
+    "source": "https://shop.se.com/pro/ae/en/product/a9mem3155-iem3155-energy-meter-63-a-modbus-1-digital-i-1-digital-o-multi-tariff-mid/",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常",
+        "passed": true
+      },
+      {
+        "name": "误操作",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复",
+        "passed": true
+      },
+      {
+        "name": "迁移｜断中线、A 与 B 各一组、C 为零，求两组各约 199.2 V 的工况",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 7,
+    "title": "风机点动与自锁",
+    "model": "TeSys D LC1D09BD",
+    "source": "https://shop.se.com/pro/us/en/product/iec-contactor-tesys-deca-nonreversing-9a-5hp-at-480vac-up-to-100ka-sccr-3-phase-3-no-24vdc-coil-open-style/",
+    "goals": 3,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常",
+        "passed": true
+      },
+      {
+        "name": "误操作",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复",
+        "passed": true
+      },
+      {
+        "name": "迁移｜自锁运行 0.8 s 后按停止，验证线圈为 0 V 而叶轮仍快于 500 r/min",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 8,
+    "title": "主轴正反互锁",
+    "model": "TeSys D LC2D09BD",
+    "source": "https://eshop.se.com/in/lc2d09bd.html",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常",
+        "passed": true
+      },
+      {
+        "name": "误操作",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复",
+        "passed": true
+      },
+      {
+        "name": "迁移｜静止时双请求被拒后，单发反向并推进 1 s，达到 −600 r/min",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 9,
+    "title": "星三角启动",
+    "model": "CT-SDS.23S · 1SVR730211R2300",
+    "source": "https://library.e.abb.com/public/99b013420be196edc12578d300226c23/2CDC111128D0201.pdf",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常",
+        "passed": true
+      },
+      {
+        "name": "误操作",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复",
+        "passed": true
+      },
+      {
+        "name": "迁移｜星形改 1 s，在启动后 1.000 s 暂停，找到两接触器均释放、绕组 0 V 的空档",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 10,
+    "title": "异步电机转差",
+    "model": "M3AA 90LB 4 · 3GAA092520-ASE",
+    "source": "https://library.e.abb.com/public/067b20899fab40d29e7cad8d3a15aa86/9AAU00000000058%20Process%20performance%20Aluminum%20motors%20EN%2011-2023_NEW-1_lowres.pdf",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常",
+        "passed": true
+      },
+      {
+        "name": "误操作",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复",
+        "passed": true
+      },
+      {
+        "name": "迁移｜30 Hz、半载，求 865 r/min 轴速及约 1.17 Hz 的转子电流频率",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "已开放"
+  },
+  {
+    "id": 11,
+    "title": "变频风机",
+    "model": "Altivar Machine ATV320U15N4C",
+    "source": "https://shop.se.com/pro/us/en/product/variable-speed-drive-altivar-machine-atv320-1-5kw-380-to-500v-3-phases-compact/",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常",
+        "passed": true
+      },
+      {
+        "name": "误操作",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复",
+        "passed": true
+      },
+      {
+        "name": "迁移｜给定 50 Hz、上限 35 Hz，得到 4200 m³/h、约 0.412 kW",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 12,
+    "title": "离心水泵运行点",
+    "model": "007-F5",
+    "source": "https://www.tacocomfort.com/documents/FileLibrary/100-1.8.pdf",
+    "goals": 4,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常",
+        "passed": true
+      },
+      {
+        "name": "误操作",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复",
+        "passed": true
+      },
+      {
+        "name": "迁移｜相似泵台 85%、末端阀 50%、开旁通，求末端约 1.44、旁通约 1.24 m³/h",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 13,
+    "title": "光电计数",
+    "model": "E3Z-T61 2M",
+    "source": "https://industrial.omron.co.uk/en/products/E3Z-T61-2M",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常｜一箱停留五扫",
+        "passed": true
+      },
+      {
+        "name": "误操作｜用电平逐扫累加",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复｜空带失光后重新对准",
+        "passed": true
+      },
+      {
+        "name": "迁移｜受光动作下先同步空带，再让一箱进出，按离箱上升沿只计一次",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "已开放"
+  },
+  {
+    "id": 14,
+    "title": "金属工件检出",
+    "model": "IFS204 (IFB3004BBPKG/US-104)",
+    "source": "https://www.ifm.cn/cn/zh/product/IFS204",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常｜钢靶靠近",
+        "passed": true
+      },
+      {
+        "name": "误操作｜照搬钢件间隙",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复｜支架位移",
+        "passed": true
+      },
+      {
+        "name": "迁移｜铜靶靠近到 1.1 mm，再退出；记录 1.3 mm 的亮灯并在 1.4 mm 释放",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "已开放"
+  },
+  {
+    "id": 15,
+    "title": "4–20 mA 液位",
+    "model": "PS3208",
+    "source": "https://www.ifm.cn/cn/zh/product/PS3208",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常｜一米水柱",
+        "passed": true
+      },
+      {
+        "name": "误操作｜换液沿用水刻度",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复｜读数中断再恢复",
+        "passed": true
+      },
+      {
+        "name": "迁移｜2 m 轻液按 800 kg/m³ 重标定，使约 14.05 mA 对应显示 2.00 m",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 16,
+    "title": "双液位排水控制逻辑",
+    "model": "Zelio Logic SR2B121BD",
+    "source": "https://www.proface.com/en/product/spec/SR2B121BD",
+    "goals": 3,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常｜保持直到低位",
+        "passed": true
+      },
+      {
+        "name": "误操作｜保持支路留空",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复｜高湿低干",
+        "passed": true
+      },
+      {
+        "name": "迁移｜井水加至 75% 再清空启动触点草稿，让旧程序排至 73%，重装后首扫停泵",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 17,
+    "title": "步进定位",
+    "model": "PKP244D15A2",
+    "source": "https://catalog.orientalmotor.com/en-us/item/ll-categories-shop-online-stepper-motor-components/e-bipolar-stepper-motors-for-cvd-multi-axis-driver/pkp244d15a2",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常｜一圈行程",
+        "passed": true
+      },
+      {
+        "name": "误操作｜四细分沿用整步脉冲数",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复｜失步后重新找参考",
+        "passed": true
+      },
+      {
+        "name": "迁移｜8 mm 导程、反向二细分发 100 脉冲，标尺到 −2 mm、轴角到 −90°",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 18,
+    "title": "气动分拣梯形图与到位超时",
+    "model": "Zelio Logic SR2B121BD",
+    "source": "https://www.proface.com/en/product/spec/SR2B121BD",
+    "goals": 3,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常｜前到位早于定时",
+        "passed": true
+      },
+      {
+        "name": "误操作｜定时预置过短",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复｜卡住、超时、确认、重试",
+        "passed": true
+      },
+      {
+        "name": "迁移｜慢速 1.6 s 工位用 2.0 s 监视，让一件塑料直行、一件金属侧推并回原位",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 19,
+    "title": "孤网教学发电机励磁负荷",
+    "model": "S4L1D-G4 Wdg.311 / AS440",
+    "source": "https://www.stamford-avk.com/sites/stamfordavk/files/ESA056E881_Rev_F.pdf",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常｜无功阶跃后的半秒恢复",
+        "passed": true
+      },
+      {
+        "name": "误操作｜用电压参考追频率",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复｜励磁冻结后恢复反馈",
+        "passed": true
+      },
+      {
+        "name": "迁移｜90 kW、75 kvar 下使用等频调速与 408 V 参考，4 s 后恢复至约 408 V、50 Hz",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 20,
+    "title": "配变变比",
+    "model": "EXN75T3H",
+    "source": "https://www.proface.com/en/product/spec/EXN75T3H",
+    "goals": 3,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常｜核对二次两种线量",
+        "passed": true
+      },
+      {
+        "name": "误操作｜一次分接误选偏高",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复｜低供电与名义分接失配",
+        "passed": true
+      },
+      {
+        "name": "迁移｜一次 492 V 配 +2.5% 分接，记录 208 V 线间值，再读约 120.09 V 相电压",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 21,
+    "title": "线路压降",
+    "model": "U-1000 R2V 3G2,5 · 084123001",
+    "source": "https://latrivenetacavi.nexans.com/en/products/residential-and-commercial/residential-commercial-Eca-class/U-1000-R2V38500/product~084123001~.html",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常｜五十米单程",
+        "passed": true
+      },
+      {
+        "name": "误操作｜单根压差当作整路",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复｜接点集中损耗",
+        "passed": true
+      },
+      {
+        "name": "迁移｜100 m、5 A、60°C 的健康回路，终端约 221.43 V、线损约 42.87 W",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 22,
+    "title": "放射馈线拓扑定位",
+    "model": "Easergy Flair 22D",
+    "source": "https://download.se.com/files?p_Doc_Ref=AMTED310010EN&p_File_Name=PremSet_AMTED310010EN_0320.pdf&p_enDocType=Catalog",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常｜甲班完整记录",
+        "passed": true
+      },
+      {
+        "name": "误操作｜把失联误认作未通过",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复｜就地记录补齐远传",
+        "passed": true
+      },
+      {
+        "name": "迁移｜载入丙班记录，依据 F0、FB 通过而 FC 未通过，提交唯一的乙前段",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 23,
+    "title": "馈线保护录波事件",
+    "model": "SEL-751",
+    "source": "https://selinc.com/api/download/10734/?lang=en",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常｜命令与分位相差 20 ms",
+        "passed": true
+      },
+      {
+        "name": "误操作｜门槛高于事件有效值",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复｜保留未响应记录并重放正常机构",
+        "passed": true
+      },
+      {
+        "name": "迁移｜40 ms 短扰动、3 A 门槛、60 ms 定时，回放到 110 ms，确认已启动且无命令、合位保留",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 24,
+    "title": "无功补偿",
+    "model": "VPL06N",
+    "source": "https://www.proface.com/en/product/spec/VPL06N",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常｜自动两级进入目标范围",
+        "passed": true
+      },
+      {
+        "name": "误操作｜手动四级过补",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复｜第二级失效、代偿与退级",
+        "passed": true
+      },
+      {
+        "name": "迁移｜60 kW、45 kvar、每级 5 kvar，自动目标 0.95，达到六级、剩余 +15 kvar",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 25,
+    "title": "单相整流滤波与纹波",
+    "model": "KBU4G",
+    "source": "https://www.vishay.com/docs/98731/kbu4.pdf",
+    "goals": 2,
+    "comic": 6,
+    "trials": [
+      {
+        "name": "正常 · 大电容抬高谷底",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 小电容承担重负载",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 找回缺失的半周",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 60 Hz、1000 µF、100 mA 单桥臂开路，找到约 1.55 V 纹波",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 26,
+    "title": "Buck 降压与周期平均",
+    "model": "LM2596T-ADJ/NOPB",
+    "source": "https://www.ti.com/lit/ds/symlink/lm2596.pdf",
+    "goals": 2,
+    "comic": 6,
+    "trials": [
+      {
+        "name": "正常 · 半周期平均",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 翻倍母线仍用半占空",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 恢复标称电感",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 从 12 V、50% 换到 24 V，调回约 5.45 V 输出",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "已开放"
+  },
+  {
+    "id": 27,
+    "title": "Boost 有载升压与峰值限流",
+    "model": "LM2577T-ADJ/NOPB",
+    "source": "https://www.ti.com/lit/ds/symlink/lm2577.pdf",
+    "goals": 2,
+    "comic": 6,
+    "trials": [
+      {
+        "name": "正常 · 有载升压",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 重载继续加占空",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 移除过重支路",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 9 V、120 Ω 轻载下调至约 16.75 V，核对输入约 0.279 A",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 28,
+    "title": "单相逆变 PWM 与基波",
+    "model": "TIDM-HV-1PH-DCAC",
+    "source": "https://www.ti.com/lit/ug/tiduay6e/tiduay6e.pdf",
+    "goals": 2,
+    "comic": 6,
+    "trials": [
+      {
+        "name": "正常 · 正峰调宽",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 母线跌落后只提调制比",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 母线恢复后检查正负峰",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 48 V 母线改为 60 Hz，合成峰值 28.8 V 的基波并在 30° 观察脉宽",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 29,
+    "title": "H 桥电机的驱动、滑行与制动",
+    "model": "DRV8871DDAR",
+    "source": "https://www.ti.com/lit/ds/symlink/drv8871.pdf",
+    "goals": 2,
+    "comic": 6,
+    "trials": [
+      {
+        "name": "正常 · 正转后二次制动",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 把滑行当成制动",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 卡滞限流后释放",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 从静止以 60% 反向送料 2 秒，得到约 −891 r/min",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 30,
+    "title": "UPS 掉电切换与负载连续性",
+    "model": "CP1500EPFCLCD",
+    "source": "https://www.cyberpower.com/eu/en/product/sku/CP1500EPFCLCD",
+    "goals": 2,
+    "comic": 6,
+    "trials": [
+      {
+        "name": "正常 · 储能跨过切换间隙",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 忽略负载保持时间",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 后备不可用后市电返回",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 900 W 负载、8 ms 基准储能，在掉电后恰好跨过 4 ms 间隙",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 31,
+    "title": "光伏局部遮阴的 I–V 与 P–V 曲线",
+    "model": "CS6K-300MS",
+    "source": "https://www.canadiansolar.com/na/wp-content/uploads/sites/3/2020/08/Installation_Manual_of_Standard_Solar_Modules_en.pdf",
+    "goals": 2,
+    "comic": 6,
+    "trials": [
+      {
+        "name": "正常 · 复现铭牌折点",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 深影仍守铭牌电压",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 绕过受遮支路再恢复日照",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 600 W/m² 无影时取 32 V，查到约 170 W 并定位约 31.68 V 的峰",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "已开放"
+  },
+  {
+    "id": 32,
+    "title": "光伏 MPPT 的扰动观察与全曲线扫描",
+    "model": "BlueSolar MPPT 100/20",
+    "source": "https://www.victronenergy.com/media/pg/Manual_BlueSolar_MPPT_75-10_up_to_100-20/en/technical-specifications.html",
+    "goals": 2,
+    "comic": 6,
+    "trials": [
+      {
+        "name": "正常 · 无影连续两次上坡取样",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 将局部峰认作全局峰",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 阴影导致失跟后广域选峰",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 无影从 38 V 全窗扫描，找到 32.5 V 并向 14.4 V 电池供约 19.81 A",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "已开放"
+  },
+  {
+    "id": 33,
+    "title": "风机功率曲线、限幅与再切入",
+    "model": "V90-2.0 MW IEC IIA / IEC S",
+    "source": "https://www.vestas.com/content/dam/vestas-com/cn/product-/2MWfinal.pdf.coredownload.inline.pdf",
+    "goals": 2,
+    "comic": 6,
+    "trials": [
+      {
+        "name": "正常 · 标准空气部分负荷",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 大风后只退一档就期待发电",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 闭锁后受限再切入",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 10 m/s 稀薄空气、调度上限 75%，取得约 918 kW",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 34,
+    "title": "电池 BMS 的 SOC 估算与余量告警",
+    "model": "BQ40Z50-R2",
+    "source": "https://www.ti.com/lit/ug/sluubk0b/sluubk0b.pdf",
+    "goals": 2,
+    "comic": 6,
+    "trials": [
+      {
+        "name": "正常 · 取出电荷到低容量门槛以下",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 有偏置时尝试对齐",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 移除偏置再对齐",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 25% 门槛下用 1.5 A 放电 5 分钟，得到 475 mAh 并触发提示",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 35,
+    "title": "并网储能充放与能量平衡",
+    "model": "Powerwall 2 AC",
+    "source": "https://www.tesla.com/sites/default/files/pdfs/powerwall/Powerwall_2_AC_GW2_NA_EN_Installation_Manual.pdf",
+    "goals": 2,
+    "comic": 6,
+    "trials": [
+      {
+        "name": "正常 · 午间充电一小时",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 把全部盈余都算作充电",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 变流器退出半小时再恢复",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 无光伏、8 kW 负荷持续一小时，保留 20% 并核对购电约 4.15 kWh",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 36,
+    "title": "交流充电握手与导引限流",
+    "model": "TIDA-010939",
+    "source": "https://www.ti.com/lit/ug/tidufe6a/tidufe6a.pdf",
+    "goals": 2,
+    "comic": 6,
+    "trials": [
+      {
+        "name": "正常 · 先识别后取流",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 未宣告就绪便提交请求",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 导引故障撤销原会话",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 32 A 车接 30% 导引，持续取流 10 秒，核对 18 A 和 11.5 Wh",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 37,
+    "title": "楼道感应照明",
+    "model": "IS 180-2（034580，炭灰色）",
+    "source": "https://www.steinel.com.au/products/is-180-2?variant=47130508558510",
+    "goals": 3,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常 · 暗处首人",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 亮处反复走过",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 视野恢复",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 20 lx、保持 5 s，两人相隔 3 s 经过，使累计亮灯 8 s 后熄灭",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "已开放"
+  },
+  {
+    "id": 38,
+    "title": "风机盘管",
+    "model": "RDF302（S55770-T238）",
+    "source": "https://cache.industry.siemens.com/dl/files/179/109789179/att_1045936/v3/A6V10350338.pdf",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常 · 中档五分钟",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 缺冷量时加大风档",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 冷水重新可用",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 满员得热 2.4 kW，用高档运行 3 个模型分钟，使室温降到 25.64 °C",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "已开放"
+  },
+  {
+    "id": 39,
+    "title": "地库排风",
+    "model": "E3Point E3SA（独立式，CO 配置）",
+    "source": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/his/en-us/products/gas-and-flame-detection/documents/ss01018stand_e3point_spec_sheet_standalone_flr_11_26_12.pdf?download=false",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常 · 无车基础通风",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 把高速请求当风量",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 来车后风量恢复",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 间歇车流持续高速换气 5 个模型分钟，使探头示值达到 14 ppm",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 40,
+    "title": "电梯门系统只做虚拟诊断",
+    "model": "cegard/Mini-MOD（2000 mm，36 光学元件型）",
+    "source": "https://media.cedes.com/filer_public/7c/9c/7c9c368b-99f0-4763-b04c-3d662edb6887/001208en_db_cegardmini_mod_v24.pdf",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常 · 闭位后取得锁反馈",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 凭闭位截图早判",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 复核缺锁与正常两份记录",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 完整回放乙片，凭 500 mm 处的反向轨迹判出光幕触发重开并提交",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 41,
+    "title": "道路信号相位",
+    "model": "Cobalt Rackmount ATC（TS2 Type-1 型）",
+    "source": "https://www.econolite.com/wp-content/uploads/2026/09/Cobalt_Rackmount_datasheet_2026.pdf",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常 · 一次请求取得通行",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 重复请求催绿",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 清空记录缺失后恢复",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 把支路绿延到 5 s，首车请求后在第 17 s 完成一轮并返回主路",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 42,
+    "title": "轨道再生制动接收度",
+    "model": "DVL 1000",
+    "source": "https://www.lem.com/sites/default/files/products_datasheets/dvl_1000_v7.pdf",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常 · 邻车全收",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 将可制动功率当作回收量",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 站旁恢复接收",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 邻车 100 kW、制动 400 kW 持续 5 s，让窗口满至 300 Wh 并核出耗散约 216.67 Wh",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 43,
+    "title": "包装输送线堵料",
+    "model": "E3Z-D62 2M",
+    "source": "https://files.omron.eu/downloads/latest/datasheet/en/e3z_compact_photoelectric_sensor_with_built-in_amplifier_datasheet_en.pdf",
+    "goals": 3,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常 · 短箱通过",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 长箱沿用短延时",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 暂停接收后恢复",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 800 mm 箱按 400 mm/s 通过，选 3 s 判定，让占位达到 2 s 并保持零报警",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 44,
+    "title": "双泵故障轮换",
+    "model": "LC 221.2.230.1.10.30",
+    "source": "https://api.grundfos.com/literature/Grundfosliterature-5269431.pdf",
+    "goals": 3,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常 · 两轮交替",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 有需求却忽略双故障",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 本轮接替保持",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 连加三批水至 120 L，观察双泵在 3.5 s 内共排出 70 L、剩 50 L",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 45,
+    "title": "厂房备用容量与关键负荷",
+    "model": "PowerLogic PM5560（METSEPM5560）",
+    "source": "https://download.se.com/files?p_Doc_Ref=HRB1684301&p_File_Name=HRB1684301-18.pdf&p_enDocType=User+guide",
+    "goals": 2,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常 · 工艺和输送可供",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 全部申请并行",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 备用容量降至 70 kVA 后重排",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 100 kVA、60 kW 的备用源单独评估 64 kW 关键工艺，查出有功缺 4 kW、视在余 20 kVA",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 46,
+    "title": "冷链仓调度",
+    "model": "AK-CC55 Single Coil（084B4082）",
+    "source": "https://assets.danfoss.com/documents/latest/198797/BC364229688105en-000201.pdf",
+    "goals": 3,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常 · 默认 2 °C 持温，先发一单再统计六分钟能耗",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 一直停冷虽零用电，指定 B 区已经超温",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · A 区除霜后降温，等待缺失回执恢复派单",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 先发一箱，前 4 min 停冷、后 2 min 按 3.5 °C 恢复，使最高温 ≤4 °C、总电量 ≤20 Wh",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 47,
+    "title": "物流堆垛联调诊断",
+    "model": "AMS 304i 200 H（50113683）",
+    "source": "https://www.leuze.com.cn/zh-cn/ams-304i-200-h/50113683",
+    "goals": 3,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常 · 当前回执匹配 A 位",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 到位之前确认",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 测距冻结一秒后恢复",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 依次完成 6 m 的第 1 单和 10 m 的第 2 单，在 B 位先拒绝旧号再接收当前号",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  },
+  {
+    "id": 48,
+    "title": "园区光储充功率平衡",
+    "model": "Smart Meter TS 65A-3",
+    "source": "https://www.fronius.com/en-gb/uk/solar-energy/installers-partners/technical-data/all-products/system-monitoring/hardware/fronius-smart-meter/fronius-smart-meter-ts-65a-3",
+    "goals": 3,
+    "comic": 7,
+    "trials": [
+      {
+        "name": "正常 · 午间盈余转充电",
+        "passed": true
+      },
+      {
+        "name": "误操作 · 高请求仍让储能待机",
+        "passed": true
+      },
+      {
+        "name": "故障与恢复 · 并网计量恢复",
+        "passed": true
+      },
+      {
+        "name": "迁移 · 零光伏、车要 18 kW，按 12 kW 限购运行 45 个模型分钟，电池守住 2 kWh、车获 6.6 kWh",
+        "passed": true
+      }
+    ],
+    "technical": true,
+    "status": "待专业复核"
+  }
+]
