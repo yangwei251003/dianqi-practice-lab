@@ -1,0 +1,454 @@
+{
+  "testedAt": "2026-11-18T17:54:29.181Z",
+  "target": "local-production-build",
+  "full": true,
+  "engine": "chrome",
+  "scenes": [
+    {
+      "id": 1,
+      "mode": "3d",
+      "meters": 6,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 2,
+      "mode": "3d",
+      "meters": 5,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 3,
+      "mode": "3d",
+      "meters": 4,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 4,
+      "mode": "3d",
+      "meters": 3,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 5,
+      "mode": "3d",
+      "meters": 4,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 6,
+      "mode": "3d",
+      "meters": 9,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 7,
+      "mode": "3d",
+      "meters": 5,
+      "goals": 3,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 8,
+      "mode": "3d",
+      "meters": 4,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 9,
+      "mode": "3d",
+      "meters": 6,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 10,
+      "mode": "3d",
+      "meters": 5,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 11,
+      "mode": "3d",
+      "meters": 6,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 12,
+      "mode": "3d",
+      "meters": 6,
+      "goals": 4,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 13,
+      "mode": "3d",
+      "meters": 6,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 14,
+      "mode": "3d",
+      "meters": 5,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 15,
+      "mode": "3d",
+      "meters": 5,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 16,
+      "mode": "3d",
+      "meters": 7,
+      "goals": 3,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 17,
+      "mode": "3d",
+      "meters": 6,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 18,
+      "mode": "3d",
+      "meters": 9,
+      "goals": 3,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 19,
+      "mode": "3d",
+      "meters": 6,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 20,
+      "mode": "3d",
+      "meters": 7,
+      "goals": 3,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 21,
+      "mode": "3d",
+      "meters": 7,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 22,
+      "mode": "3d",
+      "meters": 6,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 23,
+      "mode": "3d",
+      "meters": 7,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 24,
+      "mode": "3d",
+      "meters": 8,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 25,
+      "mode": "3d",
+      "meters": 4,
+      "goals": 2,
+      "panels": 6,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 26,
+      "mode": "3d",
+      "meters": 4,
+      "goals": 2,
+      "panels": 6,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 27,
+      "mode": "3d",
+      "meters": 5,
+      "goals": 2,
+      "panels": 6,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 28,
+      "mode": "3d",
+      "meters": 5,
+      "goals": 2,
+      "panels": 6,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 29,
+      "mode": "3d",
+      "meters": 4,
+      "goals": 2,
+      "panels": 6,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 30,
+      "mode": "3d",
+      "meters": 5,
+      "goals": 2,
+      "panels": 6,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 31,
+      "mode": "3d",
+      "meters": 6,
+      "goals": 2,
+      "panels": 6,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 32,
+      "mode": "3d",
+      "meters": 5,
+      "goals": 2,
+      "panels": 6,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 33,
+      "mode": "3d",
+      "meters": 5,
+      "goals": 2,
+      "panels": 6,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 34,
+      "mode": "3d",
+      "meters": 6,
+      "goals": 2,
+      "panels": 6,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 35,
+      "mode": "3d",
+      "meters": 6,
+      "goals": 2,
+      "panels": 6,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 36,
+      "mode": "3d",
+      "meters": 5,
+      "goals": 2,
+      "panels": 6,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 37,
+      "mode": "3d",
+      "meters": 5,
+      "goals": 3,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 38,
+      "mode": "3d",
+      "meters": 5,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 39,
+      "mode": "3d",
+      "meters": 5,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 40,
+      "mode": "3d",
+      "meters": 7,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 41,
+      "mode": "3d",
+      "meters": 10,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 42,
+      "mode": "3d",
+      "meters": 9,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 43,
+      "mode": "3d",
+      "meters": 7,
+      "goals": 3,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 44,
+      "mode": "3d",
+      "meters": 8,
+      "goals": 3,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 45,
+      "mode": "3d",
+      "meters": 9,
+      "goals": 2,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 46,
+      "mode": "3d",
+      "meters": 12,
+      "goals": 3,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 47,
+      "mode": "3d",
+      "meters": 8,
+      "goals": 3,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    },
+    {
+      "id": 48,
+      "mode": "3d",
+      "meters": 9,
+      "goals": 3,
+      "panels": 7,
+      "transfer": true,
+      "surface": true
+    }
+  ],
+  "checks": [
+    "发布版目录只列正式开放工位，勾选预习才展示全部 48 项",
+    "首页与首屏加载",
+    "三芯教学剖视切换真实三维几何，非切换静态图片",
+    "六阶段路线、型号索引",
+    "JSON 下载导入、确认替换、损坏备份保护",
+    "打印样式与真实 PDF 导出",
+    "390px 触控导航、窄屏布局、在独立移动配置导入桌面备份并还原时间与读数",
+    "图形能力不足时明确二维降级，仍可操作",
+    "三维画布选中并操作热点实际插拔导线；逐对点击六端子搭成串联实测两灯各 12 V、键盘视图切换、漫画定位部件",
+    "RC 误操作与开路恢复真实控件读数、三维拖动与缩放改变像素画面、相机复位"
+  ],
+  "failures": [],
+  "version": "157.0.8103.80"
+}

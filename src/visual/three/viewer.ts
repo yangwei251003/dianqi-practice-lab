@@ -10,6 +10,8 @@ import { bench, bindParts, operatorPanel } from './bench'
 import { clamp, Kit } from './kit'
 import { referenceDevice } from './reference'
 import { buildStation } from './stations'
+import { fieldLayer, scopeDisplays } from './field-layer'
+import { stageDeck } from './stage-deck'
 
 const direction = new Vector3(5.3,5.45,9.8).normalize()
 const horizontal = new Vector3().crossVectors(new Vector3(0,1,0),direction).normalize()
@@ -68,8 +70,17 @@ export class Viewer {
   private picked?:Object3D
   private readonly resize:ResizeObserver
   private readonly reduced=window.matchMedia('(prefers-reduced-motion: reduce)')
+  private get quiet(){return this.reduced.matches||document.documentElement.dataset.motion==='quiet'}
   private kit?:Kit
   private current?:Snapshot
+  private layer?:ReturnType<typeof fieldLayer>
+  private deck?:ReturnType<typeof stageDeck>
+  private application?:Group
+  private wide?:ReturnType<typeof framedBounds>
+  private close?:ReturnType<typeof framedBounds>
+  private detailed=true
+  private running=false
+  private lastFrame=0
   private focus=-1
   private frame=0
   private painted=false
@@ -119,12 +130,14 @@ export class Viewer {
     canvas.addEventListener('pointercancel',this.cancel)
     canvas.addEventListener('pointermove',this.move)
     canvas.addEventListener('webglcontextlost',this.lost)
+    document.addEventListener('visibilitychange',this.visibility)
+    this.reduced.addEventListener('change',this.visibility)
     this.layout()
   }
 
   load(lesson:Lesson) {
     if(this.kit?.lesson===lesson) return
-    if(this.kit) { this.scene.remove(this.kit.root); this.kit.dispose() }
+    if(this.kit) { this.layer?.dispose();this.deck?.dispose();this.scene.remove(this.kit.root); this.kit.dispose() }
     const kit=new Kit(lesson)
     this.kit=kit
     this.current=undefined
@@ -135,15 +148,19 @@ export class Viewer {
     const {reference,application}=bench(kit)
     referenceDevice(kit,reference)
     const mapping=buildStation(kit,application)
+    scopeDisplays(kit,application)
     operatorPanel(kit)
     bindParts(kit,mapping)
     kit.batch()
-    for(const subject of [reference,application]) subject.traverse(o=>{
+    for(const subject of [application,reference]) subject.traverse(o=>{
       const i=o.userData.part
       if(typeof i==='number'&&!this.owners.has(i)) this.owners.set(i,o)
     })
     this.scene.add(kit.root)
-    this.bounds=framedBounds(kit.root)
+    this.wide=framedBounds(kit.root);this.close=framedBounds(application)
+    this.deck=stageDeck(kit,application)
+    this.layer=fieldLayer(kit,application);this.application=application
+    this.studio(this.detailed)
     this.renderer.shadowMap.needsUpdate=true
     this.home()
     this.layout()
@@ -155,11 +172,23 @@ export class Viewer {
     const dt=previous ? s.time-previous.time : 0
     if(this.picked?.userData.part!==focus) this.picked=undefined
     this.current=s; this.focus=focus
-    this.kit.actions.forEach(apply=>apply(s,focus,dt,this.reduced.matches))
+    this.kit.actions.forEach(apply=>apply(s,focus,dt,this.quiet))
+    if(!this.running&&!this.quiet&&dt>0)this.kit.motions.forEach(move=>move(s,Math.min(dt,1)))
     this.renderer.shadowMap.needsUpdate=true
     this.queue()
   }
 
+  studio(detailed:boolean) {
+    this.detailed=detailed
+    if(!this.kit||!this.application||!this.close||!this.wide)return
+    for(const child of this.kit.root.children)child.visible=!detailed||child===this.application
+    this.bounds=detailed?this.close:this.wide;this.floor.material.color.set(detailed?'#617b81':'#dce4df');this.contact.visible=!detailed
+    if(this.deck)this.deck.root.visible=detailed
+    this.floor.position.y=detailed?-.10:-.477;this.renderer.shadowMap.needsUpdate=true;this.home();this.layout()
+  }
+  fields(show:boolean){if(this.layer)this.layer.root.visible=show;this.queue()}
+  setRunning(running:boolean){if(this.running!==running){this.running=running;this.lastFrame=0;this.queue()}}
+  private visibility=()=>{this.lastFrame=0;if(!document.hidden)this.queue()}
   cutaway(enabled:boolean) {
     const jacket=this.kit?.root.getObjectByName('insulation-jacket')
     if(!jacket)return
@@ -197,19 +226,24 @@ export class Viewer {
   }
   private queue=()=>{
     if(this.gone || this.frame) return
-    this.frame=requestAnimationFrame(()=>{
+    this.frame=requestAnimationFrame(stamp=>{
       this.frame=0
       if(this.gone) return
       try {
+        const animate=this.running&&!document.hidden&&!this.quiet
+        if(animate&&this.current&&this.lastFrame){const delta=Math.min(.15,(stamp-this.lastFrame)/1000);for(const move of this.kit?.motions??[])move(this.current,delta)}
+        this.lastFrame=animate?stamp:0
         this.renderer.render(this.scene,this.camera)
         this.placePin()
         if(!this.painted&&this.kit){this.painted=true;this.ready()}
+        if(animate)this.queue()
       }
       catch { this.fail() }
     })
   }
   private placePin() {
     const owner=this.picked??this.owners.get(this.focus)
+    for(let branch:Object3D|null|undefined=owner??this.kit?.anchors[this.focus];branch;branch=branch.parent){if(!branch.visible){this.pin.hidden=true;return}}
     if(owner && owner.visible) {
       this.pinBox.setFromObject(owner)
       this.pinBox.getCenter(this.pinAt)
@@ -233,7 +267,7 @@ export class Viewer {
     this.ray.setFromCamera(this.cursor,this.camera)
     const hit=this.ray.intersectObject(this.kit.root,true).find(h=>{
       let obj:Object3D|null=h.object
-      while(obj){if(!obj.visible)return false;obj=obj.parent}
+      while(obj){if(!obj.visible||obj===this.layer?.root)return false;obj=obj.parent}
       return true
     })
     let node:Object3D|null=hit?.object ?? null,actuator=false
@@ -275,6 +309,7 @@ export class Viewer {
     this.gone=true
     cancelAnimationFrame(this.frame)
     this.resize.disconnect()
+    document.removeEventListener('visibilitychange',this.visibility);this.reduced.removeEventListener('change',this.visibility)
     this.canvas.removeEventListener('pointerdown',this.down)
     this.canvas.removeEventListener('pointerup',this.up)
     this.canvas.removeEventListener('pointercancel',this.cancel)
@@ -282,7 +317,7 @@ export class Viewer {
     this.canvas.removeEventListener('webglcontextlost',this.lost)
     this.orbit.removeEventListener('change',this.queue)
     this.orbit.dispose()
-    this.kit?.dispose()
+    this.layer?.dispose();this.deck?.dispose();this.kit?.dispose()
     this.key.shadow.dispose()
     this.floor.material.dispose(); this.floor.geometry.dispose()
     this.contact.material.map?.dispose(); this.contact.material.dispose(); this.contact.geometry.dispose()

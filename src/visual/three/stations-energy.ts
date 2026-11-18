@@ -172,7 +172,7 @@ function wind(k:Kit,p:Group) {
   k.tag(t.body,'wind')
   const cabinetBody=k.tag(cabinet(k,group(p,0.99,0,-0.08),0.81,0.92,0.61),'load')
   k.display(cabinetBody,0.51,0.18,0,0.66,0.362,s=>displayValue(value(s,/^实际有功$/,/^kW$/))+' kW')
-  spin(k,t.rotor,'z',s=>value(s,/^实际有功$/,/^kW$/))
+  spin(k,t.rotor,'z',s=>s.frame.meters[0][1]>0?s.input.wind:0)
 }
 
 function bms(k:Kit,p:Group) {
@@ -203,8 +203,8 @@ function pcs(k:Kit,p:Group) {
     for(let j=0;j<4;j++) k.cylinder(grid,0.088,0.045,x,0.57+j*0.12,0,'ice','y',16,0.63)
   }
   for(const x of [-0.69,0.66]) k.box(deck,0.4,0.05,0.094,x,0.039,0.36,'copper')
-  k.display(central,0.44,0.124,0,1.1,0.484,s=>displayValue(value(s,/^储能交流功率/,/kW/))+' kW')
-  powerDirection(k,deck,-0.69,0.36,s=>-value(s,/^储能交流功率/,/kW/))
+  k.display(central,0.44,0.124,0,1.1,0.484,s=>displayValue(value(s,/^储能交流有功功率/,/kW/))+' kW')
+  powerDirection(k,deck,-0.69,0.36,s=>-value(s,/^储能交流有功功率/,/kW/))
   powerDirection(k,deck,0.66,0.36,s=>-value(s,/^网侧功率/,/kW/))
 }
 

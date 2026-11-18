@@ -1,7 +1,7 @@
 import type { Group } from 'three'
 import { contactor, disconnect, terminals } from './electrical'
 import { clamp, group, Kit, type Finish, type Point } from './kit'
-import { board, capacitor, fan, gauge, lamp, motor, plaque, pump, skid, trace, valve } from './machinery'
+import { board, capacitor, fan, gauge, impeller, lamp, motor, plaque, pump, skid, trace, valve } from './machinery'
 import { spin, value } from './signals'
 
 function patchCords(k:Kit,p:Group,sockets:Point[]) {
@@ -167,6 +167,7 @@ function motorStarter(k:Kit,p:Group,count:number) {
     const junc=k.tag(terminals(k,group(deck,0.73,0.04,0.56,0.56),6),'delta')
     junc.rotation.y=0
   }
+  if(count===1) { const blades=impeller(k,motorUnit.shaft,.47,'amber',6);blades.rotation.y=Math.PI/2;blades.position.x=.10 }
   spin(k,motorUnit.shaft,'x',s=>{
     const speed=value(s,/转速|速度/,/rpm|r\/min|转\/分/i)
     if(speed) return speed
@@ -225,7 +226,7 @@ function pumpCurve(k:Kit,p:Group) {
     v.wheel.rotation.y=2.6*clamp((s.input.valve??s.input.opening??100)/100)
     bypass.wheel.rotation.y=s.input.bypass?1.1:0
   })
-  spin(k,a.shaft,'x',s=>value(s,/流量|转速/))
+  spin(k,a.shaft,'x',s=>s.input.motor?value(s,/曲线转速比/):0)
 }
 
 export const foundationStations=[safety,lamps,terminalBench,meterBench,rc,phases,

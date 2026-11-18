@@ -54,15 +54,11 @@ export function meterText(id:number,s:Snapshot) {
   return m?displayValue(m[1])+(m[2]?' '+m[2]:''):'—'
 }
 
-/** Visible rotation is sampled on simulation ticks. A stationary snapshot cannot advance a rotor. */
 export function spin(k: Kit, rotor: Object3D, axis: 'x'|'y'|'z', speed: (s: Snapshot) => number) {
   const initial=rotor.rotation[axis]
-  let angle = initial
-  k.respond((s,_focus,dt,reduced) => {
-    const r = speed(s)
-    if(dt<0 || s.action==='init'){angle=initial;rotor.rotation[axis]=initial;return}
-    if (!Number.isFinite(r) || reduced || dt === 0 || r === 0) return
-    angle = (angle + Math.sign(r) * Math.min(4.8,Math.log1p(Math.abs(r)) * 0.83) * dt) % (Math.PI*2)
-    rotor.rotation[axis] = angle
+  k.respond((state,_focus,dt)=>{if(dt<0||state.action==='init')rotor.rotation[axis]=initial})
+  k.motions.push((state,seconds)=>{
+    const rate=speed(state)
+    if(Number.isFinite(rate)&&rate!==0)rotor.rotation[axis]=(rotor.rotation[axis]+Math.sign(rate)*Math.min(8,Math.log1p(Math.abs(rate))*.95)*seconds)%(Math.PI*2)
   })
 }

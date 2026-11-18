@@ -9,6 +9,8 @@
     "preview": "vite preview --host 127.0.0.1",
     "test": "tsx --test tests/*.test.ts src/visual/three/*.test.ts",
     "test:browsers": "tsx scripts/browser-check.ts",
+    "test:animation": "tsx scripts/animated-rigs-check.ts",
+    "test:interactions": "tsx scripts/interaction-check.ts",
     "audit:content": "tsx scripts/content-report.ts"
   },
   "dependencies": {

@@ -6,6 +6,7 @@
 - 安全范围查阅[GB/T 13869–2017](https://std.samr.gov.cn/gb/search/gbDetailed?id=N1sPm%2FYzMfc%3D&mode=p)、[2026 版实施日期与替代关系](https://std.samr.gov.cn/gb/search/gbDetailed?id=UwGkmDbrFRc%3D&mode=p)、[GB/T 18487.1–2023 及修改单入口](https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=AEF144D5381E9FDBD265AFA5A87595A3)。工程适用性需要执业人员另行核验。
 - 应用图标来自 [Lucide](https://lucide.dev/license)（ISC；源自 Feather 的图标按所附 MIT）。React、Three.js 等依赖按原许可使用。生产构建随附第三方许可说明；项目 MIT 许可不重新授权第三方资产。
 - 字体使用访问设备已有字体，不随站点分发商用字库。浏览器截图仅记录本站输出，演示数据不是学生真实记录。
+- 动效术语核对自泊舟的AI思考的[26 个网页动效视频](https://www.douyin.com/video/7709126118539873587)，2026-11-19 查阅，约 00:32 处为总览。只链接原作，不随源码或网站分发原片、音轨、截图和转写。本站的交互示例、术语描述、测量面板、三维轨迹和动效截图另行原创；网页的动画不调用视频平台。
 
 ## 厂家链接的二次读回
 

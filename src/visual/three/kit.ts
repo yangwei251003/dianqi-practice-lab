@@ -41,6 +41,7 @@ export function asPart<T extends Object3D>(object: T, index: number) {
 export class Kit {
   readonly root = new Group()
   readonly actions: Response[] = []
+  readonly motions: ((state:Snapshot,seconds:number)=>void)[]=[]
   readonly anchors: Object3D[] = []
   readonly partGeometry = new Map<string, Object3D[]>()
   private readonly geos = new Map<string, BufferGeometry>()
@@ -231,7 +232,7 @@ export class Kit {
     })
   }
 
-  scope(p:Object3D,w:number,h:number,x:number,y:number,z:number,index=0) {
+  scope(p:Object3D,w:number,h:number,x:number,y:number,z:number,index=0,axes?:{x:[number,number];y:[number,number];cursor:(state:Snapshot)=>number}) {
     const canvas=document.createElement('canvas')
     canvas.width=400;canvas.height=180
     const ctx=canvas.getContext('2d'), map=new CanvasTexture(canvas)
@@ -253,6 +254,7 @@ export class Kit {
       if(points?.length) {
         let minX=Infinity,maxX=-Infinity,minY=Infinity,maxY=-Infinity
         for(const [xx,yy] of points){minX=Math.min(minX,xx);maxX=Math.max(maxX,xx);minY=Math.min(minY,yy);maxY=Math.max(maxY,yy)}
+        if(axes){[minX,maxX]=axes.x;[minY,maxY]=axes.y}
         if(maxY===minY){minY-=1;maxY+=1}
         ctx.strokeStyle='#a9efd0';ctx.lineWidth=4;ctx.beginPath()
         points.forEach(([xx,yy],j)=>{
@@ -260,6 +262,7 @@ export class Kit {
           if(j)ctx.lineTo(px,py);else ctx.moveTo(px,py)
         })
         ctx.stroke()
+        if(axes){const cursor=12+376*clamp((axes.cursor(s)-minX)/(maxX-minX));ctx.beginPath();ctx.strokeStyle='#ffc75d';ctx.lineWidth=4;ctx.moveTo(cursor,12);ctx.lineTo(cursor,162);ctx.stroke()}
       }
       map.needsUpdate=true
     })
@@ -301,6 +304,7 @@ export class Kit {
     this.textures.forEach(t => t.dispose())
     this.root.clear()
     this.actions.length = 0
+    this.motions.length=0
     this.anchors.length = 0
     this.partGeometry.clear()
   }

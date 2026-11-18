@@ -1,0 +1,234 @@
+{
+  "engine": "chrome",
+  "version": "157.0.8103.80",
+  "testedAt": "2026-11-18T17:52:01.478Z",
+  "target": "http://127.0.0.1:4192",
+  "scope": "Pointer, keyboard, touch alternatives via button, focus restoration, reduced motion, persisted sample and narrow layout; not a physical-phone test.",
+  "results": [
+    {
+      "id": 1,
+      "passed": true
+    },
+    {
+      "id": 2,
+      "passed": true
+    },
+    {
+      "id": 3,
+      "passed": true
+    },
+    {
+      "id": 4,
+      "passed": true
+    },
+    {
+      "id": 5,
+      "passed": true
+    },
+    {
+      "id": 6,
+      "passed": true
+    },
+    {
+      "id": 7,
+      "passed": true
+    },
+    {
+      "id": 8,
+      "passed": true
+    },
+    {
+      "id": 9,
+      "passed": true
+    },
+    {
+      "id": 10,
+      "passed": true
+    },
+    {
+      "id": 11,
+      "passed": true
+    },
+    {
+      "id": 12,
+      "passed": true
+    },
+    {
+      "id": 13,
+      "passed": true
+    },
+    {
+      "id": 14,
+      "passed": true
+    },
+    {
+      "id": 15,
+      "passed": true
+    },
+    {
+      "id": 16,
+      "passed": true
+    },
+    {
+      "id": 17,
+      "passed": true
+    },
+    {
+      "id": 18,
+      "passed": true
+    },
+    {
+      "id": 19,
+      "passed": true
+    },
+    {
+      "id": 20,
+      "passed": true
+    },
+    {
+      "id": 21,
+      "passed": true
+    },
+    {
+      "id": 22,
+      "passed": true
+    },
+    {
+      "id": 23,
+      "passed": true
+    },
+    {
+      "id": 24,
+      "passed": true
+    },
+    {
+      "id": 25,
+      "passed": true
+    },
+    {
+      "id": 26,
+      "passed": true
+    },
+    {
+      "id": "术语描述可选取，应用链接定位真实取样按钮",
+      "passed": true
+    },
+    {
+      "id": "从场景库倾斜卡片和下拉导航进入实际工位",
+      "passed": true
+    },
+    {
+      "id": "取样冻结、手记保存、不代做实操",
+      "passed": true
+    },
+    {
+      "id": "实际位置 1 · 悬停",
+      "passed": true
+    },
+    {
+      "id": "实际位置 2 · 下拉菜单",
+      "passed": true
+    },
+    {
+      "id": "实际位置 3 · 磁吸按钮",
+      "passed": true
+    },
+    {
+      "id": "实际位置 4 · 跟随鼠标转动",
+      "passed": true
+    },
+    {
+      "id": "实际位置 5 · 自定义光标",
+      "passed": true
+    },
+    {
+      "id": "实际位置 6 · 指针响应背景",
+      "passed": true
+    },
+    {
+      "id": "实际位置 7 · 光标拖尾",
+      "passed": true
+    },
+    {
+      "id": "实际位置 8 · 倾斜卡片",
+      "passed": true
+    },
+    {
+      "id": "实际位置 9 · 悬停显现",
+      "passed": true
+    },
+    {
+      "id": "实际位置 10 · 提示气泡",
+      "passed": true
+    },
+    {
+      "id": "实际位置 11 · 光标聚光灯",
+      "passed": true
+    },
+    {
+      "id": "实际位置 12 · 共享元素转场",
+      "passed": true
+    },
+    {
+      "id": "实际位置 13 · 轮播",
+      "passed": true
+    },
+    {
+      "id": "实际位置 14 · 标签切换",
+      "passed": true
+    },
+    {
+      "id": "实际位置 15 · 图标形变",
+      "passed": true
+    },
+    {
+      "id": "实际位置 16 · 点击涟漪",
+      "passed": true
+    },
+    {
+      "id": "实际位置 17 · 成功反馈",
+      "passed": true
+    },
+    {
+      "id": "实际位置 18 · 数字滚动",
+      "passed": true
+    },
+    {
+      "id": "实际位置 19 · 轻提示",
+      "passed": true
+    },
+    {
+      "id": "实际位置 20 · 抽屉",
+      "passed": true
+    },
+    {
+      "id": "实际位置 21 · 布局过渡",
+      "passed": true
+    },
+    {
+      "id": "实际位置 22 · 折叠展开",
+      "passed": true
+    },
+    {
+      "id": "实际位置 23 · 骨架屏",
+      "passed": true
+    },
+    {
+      "id": "实际位置 24 · 弹窗",
+      "passed": true
+    },
+    {
+      "id": "实际位置 25 · 错误反馈",
+      "passed": true
+    },
+    {
+      "id": "实际位置 26 · 页面转场",
+      "passed": true
+    },
+    {
+      "id": "减少动效与窄屏",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

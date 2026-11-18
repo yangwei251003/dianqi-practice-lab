@@ -1,0 +1,442 @@
+{
+  "version": "157.0.8103.80",
+  "testedAt": "2026-11-18T17:39:45.078Z",
+  "target": "http://127.0.0.1:4192",
+  "browser": "Installed Chrome / headless + SwiftShader",
+  "scope": "Three-dimensional canvas center crop only, counting pixels changing by at least 15/255. Each station compares two conditions, two frames in one running chapter, and two frozen frames. Not a hardware measurement or frame-rate benchmark.",
+  "results": [
+    {
+      "id": 1,
+      "chapter": 2,
+      "changedPixels": 4730,
+      "movingChapter": 1,
+      "movingPixels": 4841,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 2,
+      "chapter": 2,
+      "changedPixels": 22116,
+      "movingChapter": 1,
+      "movingPixels": 5885,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 3,
+      "chapter": 2,
+      "changedPixels": 4062,
+      "movingChapter": 1,
+      "movingPixels": 2551,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 4,
+      "chapter": 2,
+      "changedPixels": 20407,
+      "movingChapter": 1,
+      "movingPixels": 3826,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 5,
+      "chapter": 2,
+      "changedPixels": 4706,
+      "movingChapter": 1,
+      "movingPixels": 3838,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 6,
+      "chapter": 2,
+      "changedPixels": 8979,
+      "movingChapter": 1,
+      "movingPixels": 7198,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 7,
+      "chapter": 2,
+      "changedPixels": 6432,
+      "movingChapter": 1,
+      "movingPixels": 8057,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 8,
+      "chapter": 2,
+      "changedPixels": 2108,
+      "movingChapter": 1,
+      "movingPixels": 1051,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 9,
+      "chapter": 2,
+      "changedPixels": 4133,
+      "movingChapter": 1,
+      "movingPixels": 1200,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 10,
+      "chapter": 2,
+      "changedPixels": 3754,
+      "movingChapter": 1,
+      "movingPixels": 4683,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 11,
+      "chapter": 2,
+      "changedPixels": 18542,
+      "movingChapter": 1,
+      "movingPixels": 10675,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 12,
+      "chapter": 2,
+      "changedPixels": 3818,
+      "movingChapter": 1,
+      "movingPixels": 1514,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 13,
+      "chapter": 2,
+      "changedPixels": 31924,
+      "movingChapter": 2,
+      "movingPixels": 2176,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 14,
+      "chapter": 2,
+      "changedPixels": 40287,
+      "movingChapter": 2,
+      "movingPixels": 1938,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 15,
+      "chapter": 2,
+      "changedPixels": 24386,
+      "movingChapter": 1,
+      "movingPixels": 872,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 16,
+      "chapter": 2,
+      "changedPixels": 8915,
+      "movingChapter": 1,
+      "movingPixels": 17011,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 17,
+      "chapter": 2,
+      "changedPixels": 37273,
+      "movingChapter": 1,
+      "movingPixels": 25003,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 18,
+      "chapter": 2,
+      "changedPixels": 11525,
+      "movingChapter": 2,
+      "movingPixels": 8544,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 19,
+      "chapter": 2,
+      "changedPixels": 3527,
+      "movingChapter": 1,
+      "movingPixels": 1691,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 20,
+      "chapter": 2,
+      "changedPixels": 1908,
+      "movingChapter": 1,
+      "movingPixels": 781,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 21,
+      "chapter": 2,
+      "changedPixels": 5794,
+      "movingChapter": 1,
+      "movingPixels": 774,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 22,
+      "chapter": 2,
+      "changedPixels": 3684,
+      "movingChapter": 2,
+      "movingPixels": 2235,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 23,
+      "chapter": 2,
+      "changedPixels": 2005,
+      "movingChapter": 1,
+      "movingPixels": 1988,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 24,
+      "chapter": 2,
+      "changedPixels": 575,
+      "movingChapter": 1,
+      "movingPixels": 1659,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 25,
+      "chapter": 2,
+      "changedPixels": 1109,
+      "movingChapter": 1,
+      "movingPixels": 2104,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 26,
+      "chapter": 2,
+      "changedPixels": 4171,
+      "movingChapter": 1,
+      "movingPixels": 2255,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 27,
+      "chapter": 2,
+      "changedPixels": 3529,
+      "movingChapter": 1,
+      "movingPixels": 2015,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 28,
+      "chapter": 2,
+      "changedPixels": 6793,
+      "movingChapter": 1,
+      "movingPixels": 1011,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 29,
+      "chapter": 2,
+      "changedPixels": 3236,
+      "movingChapter": 1,
+      "movingPixels": 4104,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 30,
+      "chapter": 2,
+      "changedPixels": 2505,
+      "movingChapter": 1,
+      "movingPixels": 695,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 31,
+      "chapter": 2,
+      "changedPixels": 21191,
+      "movingChapter": 1,
+      "movingPixels": 6626,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 32,
+      "chapter": 2,
+      "changedPixels": 4902,
+      "movingChapter": 1,
+      "movingPixels": 6437,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 33,
+      "chapter": 2,
+      "changedPixels": 9774,
+      "movingChapter": 1,
+      "movingPixels": 7835,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 34,
+      "chapter": 2,
+      "changedPixels": 3235,
+      "movingChapter": 1,
+      "movingPixels": 3078,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 35,
+      "chapter": 2,
+      "changedPixels": 1810,
+      "movingChapter": 1,
+      "movingPixels": 2099,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 36,
+      "chapter": 2,
+      "changedPixels": 8193,
+      "movingChapter": 1,
+      "movingPixels": 3409,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 37,
+      "chapter": 2,
+      "changedPixels": 2179,
+      "movingChapter": 1,
+      "movingPixels": 2126,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 38,
+      "chapter": 2,
+      "changedPixels": 6696,
+      "movingChapter": 1,
+      "movingPixels": 9595,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 39,
+      "chapter": 2,
+      "changedPixels": 5354,
+      "movingChapter": 1,
+      "movingPixels": 5770,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 40,
+      "chapter": 2,
+      "changedPixels": 9364,
+      "movingChapter": 1,
+      "movingPixels": 19512,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 41,
+      "chapter": 2,
+      "changedPixels": 1490,
+      "movingChapter": 1,
+      "movingPixels": 446,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 42,
+      "chapter": 2,
+      "changedPixels": 6636,
+      "movingChapter": 1,
+      "movingPixels": 863,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 43,
+      "chapter": 2,
+      "changedPixels": 447,
+      "movingChapter": 1,
+      "movingPixels": 8139,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 44,
+      "chapter": 2,
+      "changedPixels": 1869,
+      "movingChapter": 1,
+      "movingPixels": 3588,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 45,
+      "chapter": 2,
+      "changedPixels": 11659,
+      "movingChapter": 1,
+      "movingPixels": 1773,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 46,
+      "chapter": 2,
+      "changedPixels": 3259,
+      "movingChapter": 1,
+      "movingPixels": 3193,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 47,
+      "chapter": 2,
+      "changedPixels": 30611,
+      "movingChapter": 1,
+      "movingPixels": 27430,
+      "pausedPixels": 0,
+      "passed": true
+    },
+    {
+      "id": 48,
+      "chapter": 2,
+      "changedPixels": 5062,
+      "movingChapter": 1,
+      "movingPixels": 5724,
+      "pausedPixels": 0,
+      "passed": true
+    }
+  ],
+  "errors": []
+}
