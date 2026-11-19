@@ -2,7 +2,7 @@
 
 一个给电气工程及其自动化学生的中文虚拟工位。先判断，再接线、设参或修改控制逻辑；设备、原理图、仪表、曲线和事件记录一起响应。无需登录，没有硬件接口、遥测或云端存档。
 
-**[打开在线实训台](https://yangwei251003.github.io/dianqi-practice-lab/)** · [新生路线](https://yangwei251003.github.io/dianqi-practice-lab/#/route) · [动效观察室：26 个名字、示例和说法](https://yangwei251003.github.io/dianqi-practice-lab/#/motion) · [查看全部建设状态](https://yangwei251003.github.io/dianqi-practice-lab/#/build)
+**[打开在线实训台](https://yangwei251003.github.io/dianqi-practice-lab/)** · [新生路线](https://yangwei251003.github.io/dianqi-practice-lab/#/route) · [查看全部建设状态](https://yangwei251003.github.io/dianqi-practice-lab/#/build)
 
 ![实训台总览](evidence/screens/home.png)
 
@@ -12,7 +12,7 @@
 
 ![第 32 工位：遮阴、光照箭头与 P–V 曲线上的工作点](evidence/screens/studio-mppt.png)
 
-[26 种效果怎么用、如何向 AI 描述](docs/MOTION.md) · [本次专项验证与边界](docs/MOTION-VALIDATION.md) · [逐工位三维运行/冻结证据](evidence/motion/animated-rigs.json)
+[三维动画专项验证](docs/MOTION-VALIDATION.md) · [逐工位三维运行/冻结证据](evidence/motion/animated-rigs.json)
 
 ## 从哪里开始
 
@@ -57,7 +57,7 @@ npm run test:browsers
 
 浏览器检查针对已在端口 4187 运行的生产预览；环境变量 `LAB_URL` 可换目标，`LAB_ENGINES` 可选 `chrome,edge,firefox,webkit`。Chrome 和 Edge 需要安装相应正式版，Firefox 通过 WebDriver BiDi，非默认路径使用 `FIREFOX_PATH`。WebKit 先执行 `npx playwright install webkit`。不能在不支持 WebGL 的平台把二维降级计为三维通过。
 
-另外两项专项检查 `npm run test:animation` 与 `npm run test:interactions` 默认读取 4192 端口，也可用 `LAB_URL` 指向同一生产预览。`MOTION_OUT` 选择证据目录；`MOTION_COURSES=7,12,23,32,48` 只抽测指定工位；`MOTION_ENGINE` 可选 `chrome`、`edge` 或 `webkit`。Windows 无头 WebKit 建议单独运行，不与其他图形浏览器争用桌面渲染资源。
+专项检查 `npm run test:animation` 默认读取 4192 端口，可用 `LAB_URL` 指向另一份生产预览。`MOTION_OUT` 选择证据目录，`MOTION_COURSES=7,12,23,32,48` 只抽测指定工位。
 
 ## 公开范围
 

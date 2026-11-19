@@ -3,45 +3,45 @@ import { Activity, ArrowDownToLine, BookOpen, BookOpenCheck, BookMarked, Boxes, 
 import { blankBook, readBook, storageKey, type Book, type Entry } from '../core/book'
 import { byId, lessons } from '../core/catalog'
 import { Home, Library, Roadmap, Devices, Records, Sources, Construction } from './pages'
-import {transition,useMotionSetting,usePointerEffects} from './motion-tools'
-import './motion.css'
 import { Heading } from './common'
 
 const Lab=lazy(()=>import('./Lab').then(module=>({default:module.Lab})))
-const Motion=lazy(()=>import('./Motion').then(module=>({default:module.Motion})))
 const navItems=[
   {id:'home',title:'学习总览',icon:House}, {id:'route',title:'新生路线',icon:Compass},
   {id:'library',title:'实训场景',icon:FlaskConical}, {id:'devices',title:'设备图鉴',icon:Boxes},
   {id:'records',title:'实验记录',icon:BookOpenCheck}
 ]
-const extras=[{id:'motion',title:'动效观察室',icon:Activity},{id:'sources',title:'资料与安全',icon:ShieldCheck},{id:'build',title:'建设清单',icon:Grid2X2}]
-const hashPath=()=>window.location.hash.replace(/^#\/?/,'')||'home'
+const extras=[{id:'sources',title:'资料与安全',icon:ShieldCheck},{id:'build',title:'建设清单',icon:Grid2X2}]
+const hashPath=()=>{
+  const path=window.location.hash.replace(/^#\/?/,'').split('?')[0]
+  return !path||path==='motion'?'home':path
+}
 function initialBook():{book:Book;warning:string} {
   try {const raw=localStorage.getItem(storageKey); return {book:raw?readBook(raw,lessons):blankBook(),warning:''}}
   catch {return {book:blankBook(),warning:'原学习存档无法读取。当前使用临时记录；为避免覆盖，原始存档会保留。可在实验记录中导入备份。'}}
 }
 export function App() {
-  const [quiet,setQuiet]=useMotionSetting();usePointerEffects()
   const [initial]=useState(initialBook)
   const [book,setBook]=useState(initial.book)
   const [canWrite,setCanWrite]=useState(!initial.warning)
   const [notice,setNotice]=useState(initial.warning)
   const [path,setPath]=useState(hashPath)
   const [drawer,setDrawer]=useState(false)
-  const [route,search]=path.split('?'),[target,param]=route.split('/')
-  useEffect(()=>{
-    const effect=new URLSearchParams(search).get('effect');if(!effect)return
-    let cancelled=false,observer:MutationObserver|undefined,timer=0,frame=0,highlighted:HTMLElement|null=null,clear=0
-    void import('./motion-catalog').then(({findLandmark})=>{const selector=findLandmark(route,effect);if(!selector||cancelled)return
-      const locate=()=>{const element=document.querySelector<HTMLElement>('#main-content '+selector.split(',').join(', #main-content '));if(!element||cancelled)return false;observer?.disconnect();if(!element.matches('a,button,input,summary,[tabindex]'))element.tabIndex=-1;element.focus({preventScroll:true});element.scrollIntoView({block:'center',behavior:'instant'});element.classList.add('mx-jump-target');highlighted=element;clear=window.setTimeout(()=>element.classList.remove('mx-jump-target'),1900);return true}
-      frame=requestAnimationFrame(()=>{if(locate())return;observer=new MutationObserver(locate);observer.observe(document.getElementById('main-content')!,{childList:true,subtree:true});timer=window.setTimeout(()=>observer?.disconnect(),5000)})
-    });return ()=>{cancelled=true;observer?.disconnect();cancelAnimationFrame(frame);clearTimeout(timer);clearTimeout(clear);highlighted?.classList.remove('mx-jump-target')}
-  },[route,search])
+  const [target,param]=path.split('/')
   const labId=target==='lab'?Number(param):0
   const lesson=byId(labId)
   const title=target==='lab'?(lesson?.title??'未知实训'):[...navItems,...extras].find(item=>item.id===target)?.title??'未找到页面'
   useEffect(()=>{
-    const change=async()=>{const next=hashPath(),station=next.startsWith('lab/');if(station)await import('./Lab');if(next.split('?')[0]==='motion')await import('./Motion');if(next!==hashPath())return;transition(()=>{setPath(next);setDrawer(false);window.scrollTo(0,0)},station?next:undefined)}
+    const replaceRetiredRoute=()=>{
+      if (/^#\/?motion(?:\?|$)/.test(window.location.hash)) window.history.replaceState(null,'','#/home')
+    }
+    const change=()=>{
+      replaceRetiredRoute()
+      setPath(hashPath())
+      setDrawer(false)
+      window.scrollTo(0,0)
+    }
+    replaceRetiredRoute()
     window.addEventListener('hashchange',change)
     const keyboard=(event:KeyboardEvent)=>{if(event.key==='Escape')setDrawer(false)}
     window.addEventListener('keydown',keyboard)
@@ -71,7 +71,7 @@ export function App() {
       <a href="#/library/search" aria-label="搜索实训与设备" className="search-short"><Search size={15}/><span>查找实训</span></a><span className="local-pill"><i/>个人工作台</span></header>
       {notice&&<div className="notice" role="status">{notice}<button aria-label="关闭提示" onClick={()=>setNotice('')}><X size={15}/></button></div>}
       <main id="main-content" tabIndex={-1} className={'main '+(target==='lab'?'lab-main':'')}>
-        {target==='motion'?<Suspense fallback={<p role="status" className="mx-skeleton">正在载入观察室…</p>}><Motion quiet={quiet} setQuiet={setQuiet}/></Suspense>:target==='home'?<Home book={book}/>:target==='route'?<Roadmap book={book}/>:target==='library'?<Library key={param} book={book} filter={param}/>:target==='devices'?<Devices/>:target==='records'?<Records book={book} onRestore={restore}/>:target==='sources'?<Sources/>:target==='build'?<Construction/>:target==='lab'&&lesson?<Suspense fallback={<p role="status">正在打开实训工作台…</p>}><Lab key={lesson.id} lesson={lesson} saved={book.entries[lesson.id]} onSave={update}/></Suspense>:<><Heading code="404 / NO STATION" title="没有找到这个工位" sub="地址可能已更改，你的实验记录仍然保存在本机。"/><a className="btn primary" href="#/home">返回学习总览</a></>}
+        {target==='home'?<Home book={book}/>:target==='route'?<Roadmap book={book}/>:target==='library'?<Library key={param} book={book} filter={param}/>:target==='devices'?<Devices/>:target==='records'?<Records book={book} onRestore={restore}/>:target==='sources'?<Sources/>:target==='build'?<Construction/>:target==='lab'&&lesson?<Suspense fallback={<p role="status">正在打开实训工作台…</p>}><Lab key={lesson.id} lesson={lesson} saved={book.entries[lesson.id]} onSave={update}/></Suspense>:<><Heading code="404 / NO STATION" title="没有找到这个工位" sub="地址可能已更改，你的实验记录仍然保存在本机。"/><a className="btn primary" href="#/home">返回学习总览</a></>}
       </main><footer className="footer"><span><BookOpen size={14}/> 电气实训台 · 工程实践手册</span><span>教学仿真 / 无真实设备连接</span></footer>
     </div>
   </div>

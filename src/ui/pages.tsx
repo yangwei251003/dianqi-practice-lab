@@ -1,11 +1,11 @@
-import { useEffect, useLayoutEffect, useRef, useState } from 'react'
-import { Activity, ArrowDownToLine, ArrowLeft, ArrowRight, ArrowUpRight, BookOpen, Boxes, Check, ChevronDown, CircleHelp, ClipboardList, Compass, Database, FileUp, FlaskConical, FolderOpen, HardDrive, Layers3, ListChecks, Map, MoveUpRight, Printer, Route, Search, ShieldAlert, SlidersHorizontal, Sparkles, Waypoints } from 'lucide-react'
+import { useEffect, useRef, useState } from 'react'
+import { Activity, ArrowDownToLine, ArrowLeft, ArrowRight, ArrowUpRight, BookOpen, Boxes, Check, ChevronDown, CircleHelp, ClipboardList, Compass, Database, FileUp, FlaskConical, FolderOpen, HardDrive, Layers3, ListChecks, Map, MoveUpRight, Printer, Route, Search, ShieldAlert, SlidersHorizontal, Waypoints } from 'lucide-react'
 import { byId, groupIndex, groups, lessons, num, paths, references, status } from '../core/catalog'
 import { downloadJson, readBook, type Book } from '../core/book'
 import { CourseArt, HeroArt } from '../visual/art'
 import { Badge, Card, Eyebrow, groupIcons, Heading, theme } from './common'
 
-import {quietMotion,Roll} from './motion-tools'
+import './bench-widgets.css'
 
 export function Home({book}:{book:Book}) {
   const resumed=book.last?byId(book.last):undefined
@@ -14,7 +14,7 @@ export function Home({book}:{book:Book}) {
   const completed=Object.values(book.entries).filter(entry=>entry.finished).length
   return <>
     <header className="home-head"><div><Eyebrow>WORKSPACE / 01</Eyebrow><h1>学习总览<span className="head-dot">.</span></h1><p>从认识第一台设备，到解释一个系统为什么这样运行。</p></div><div className="edition"><i/> PRACTICE SERIES <b>VOL. 01</b></div></header>
-    <section className="hero" data-pointer><div className="hero-grid"/><div className="hero-copy"><span className="hero-tag"><i/> VIRTUAL ENGINEERING LAB</span><h2>让电气原理，<br/>在你手中运转<span>。</span></h2><p>从点亮一盏灯，到调度一座光储充园区。<br className="hero-break"/>在虚拟工位里接线、测量、调试，用结果检验预测。</p><div className="hero-actions"><a data-pointer className="btn amber magnetic-link" href={'#/lab/'+(resumed?.id??1)}><span>{resumed?'继续上次实训':'开始第一课'}</span><ArrowRight size={16}/></a><a className="text-btn light" href="#/route"><Map size={16}/> 查看学习路线</a><a className="text-btn light" href="#/motion"><Sparkles size={15}/> 动效观察室</a></div></div><div className="hero-art"><HeroArt/></div><span className="figure-caption">FIG. 01 / 电机控制实训台</span></section>
+    <section className="hero"><div className="hero-grid"/><div className="hero-copy"><span className="hero-tag"><i/> VIRTUAL ENGINEERING LAB</span><h2>让电气原理，<br/>在你手中运转<span>。</span></h2><p>从点亮一盏灯，到调度一座光储充园区。<br className="hero-break"/>在虚拟工位里接线、测量、调试，用结果检验预测。</p><div className="hero-actions"><a className="btn amber" href={'#/lab/'+(resumed?.id??1)}><span>{resumed?'继续上次实训':'开始第一课'}</span><ArrowRight size={16}/></a><a className="text-btn light" href="#/route"><Map size={16}/> 查看学习路线</a></div></div><div className="hero-art"><HeroArt/></div><span className="figure-caption">FIG. 01 / 电机控制实训台</span></section>
     <div className="stat-row">{[{label:'专业方向',value:'08',icon:Waypoints},{label:'建设范围 · 实训',value:'48',icon:Boxes},{label:'已开始',value:num(started),icon:FlaskConical},{label:'已完成',value:num(completed),icon:ListChecks}].map(item=><div className="stat" key={item.label}><span className="stat-icon"><item.icon size={21}/></span><div><b>{item.value}</b><span>{item.label}</span></div></div>)}</div>
     <div className="section-title"><div><Eyebrow>EDITOR’S BENCH</Eyebrow><h2>精选工位</h2></div><a className="text-btn" href="#/library">全部实训 <ArrowRight size={15}/></a></div>
     <p className="section-note">从入门电路到系统调度，选一个问题开始。标有“待专业复核”的工位仅供仿真预习。</p>
@@ -28,9 +28,6 @@ export function Library({book,filter}:{book:Book;filter?:string}) {
   const [active,setActive]=useState(Number.isInteger(parsed)&&parsed>=0&&parsed<8?parsed:-1)
   const [query,setQuery]=useState('')
   const [includeReview,setIncludeReview]=useState(false)
-  const list=useRef<HTMLDivElement>(null),oldTops=useRef(new globalThis.Map<string,DOMRect>())
-  const recordPositions=()=>{oldTops.current=new globalThis.Map(Array.from(list.current?.querySelectorAll<HTMLElement>('[data-station-card]')??[],node=>[node.dataset.stationCard!,node.getBoundingClientRect()] as const))}
-  useLayoutEffect(()=>{if(!quietMotion())list.current?.querySelectorAll<HTMLElement>('[data-station-card]').forEach(node=>{const before=oldTops.current.get(node.dataset.stationCard!);if(!before)return;const after=node.getBoundingClientRect(),dx=before.left-after.left,dy=before.top-after.top;if(dx||dy)node.animate([{translate:`${dx}px ${dy}px`},{translate:'0px 0px'}],{duration:230,easing:'ease-out'})});oldTops.current.clear()},[active,query,includeReview])
   const search=useRef<HTMLInputElement>(null)
   const quick=useRef<HTMLDetailsElement>(null)
   useEffect(()=>{const esc=(event:KeyboardEvent)=>{if(event.key==='Escape'&&quick.current?.open){quick.current.open=false;quick.current.querySelector('summary')?.focus()}};const away=(event:PointerEvent)=>{if(quick.current?.open&&event.target instanceof Node&&!quick.current.contains(event.target))quick.current.open=false};document.addEventListener('keydown',esc);document.addEventListener('pointerdown',away);return ()=>{document.removeEventListener('keydown',esc);document.removeEventListener('pointerdown',away)}},[])
@@ -38,10 +35,10 @@ export function Library({book,filter}:{book:Book;filter?:string}) {
   const searched=lessons.filter(lesson=>(active<0||groupIndex(lesson.id)===active)&&(`${num(lesson.id)} ${lesson.title} ${lesson.context} ${lesson.task} ${lesson.device.maker} ${lesson.device.model} ${lesson.device.name}`).toLowerCase().includes(query.trim().toLowerCase()))
   const matched=searched.filter(lesson=>includeReview||status(lesson)==='已开放')
   return <><Heading code="SCENE LIBRARY / 02" title="实训场景" sub="从要解决的问题出发，寻找设备、工作条件和可以亲手改变的结果。"/>
-    <div className="filter-bar"><label className="search-box"><Search size={17}/><input ref={search} value={query} onChange={event=>{recordPositions();setQuery(event.target.value)}} placeholder="搜索场景、设备型号或关键词…" aria-label="搜索场景、设备型号"/></label><label className="switch-label"><input type="checkbox" checked={includeReview} onChange={event=>{recordPositions();setIncludeReview(event.target.checked)}}/>包含预习工位</label></div>
-    <div className="filter-chips" aria-label="方向筛选">{['全部方向',...groups.map(group=>group[0])].map((label,index)=><button key={label} aria-pressed={active===index-1} onClick={()=>{recordPositions();setActive(index-1)}}>{label}</button>)}</div>
-    <div className="list-count"><span><SlidersHorizontal size={14}/> <Roll value={matched.length}/> 个{includeReview?'匹配工位':'已开放实训'}</span><details className="quick-stations" ref={quick}><summary>快速跳站 ▾</summary><div>{[4,7,12,32,48].map(id=><a key={id} href={'#/lab/'+id}>{num(id)} · {byId(id)?.title}</a>)}</div></details></div>
-    {matched.length?<div ref={list} className="cards library">{matched.map(lesson=><Card key={lesson.id} lesson={lesson} entry={book.entries[lesson.id]}/>)}</div>:<div className="empty"><Search/><h3>没有符合条件的已选工位</h3><p>试试“泵”“PLC”或具体型号；尚未签核的工位可在预习模式查看。</p><button className="btn secondary" onClick={()=>{setActive(-1);setQuery('');setIncludeReview(true)}}>查看所有建设工位</button></div>}
+    <div className="filter-bar"><label className="search-box"><Search size={17}/><input ref={search} value={query} onChange={event=>setQuery(event.target.value)} placeholder="搜索场景、设备型号或关键词…" aria-label="搜索场景、设备型号"/></label><label className="switch-label"><input type="checkbox" checked={includeReview} onChange={event=>setIncludeReview(event.target.checked)}/>包含预习工位</label></div>
+    <div className="filter-chips" aria-label="方向筛选">{['全部方向',...groups.map(group=>group[0])].map((label,index)=><button key={label} aria-pressed={active===index-1} onClick={()=>setActive(index-1)}>{label}</button>)}</div>
+    <div className="list-count"><span><SlidersHorizontal size={14}/> {matched.length} 个{includeReview?'匹配工位':'已开放实训'}</span><details className="quick-stations" ref={quick}><summary>快速跳站 ▾</summary><div>{[4,7,12,32,48].map(id=><a key={id} href={'#/lab/'+id}>{num(id)} · {byId(id)?.title}</a>)}</div></details></div>
+    {matched.length?<div className="cards library">{matched.map(lesson=><Card key={lesson.id} lesson={lesson} entry={book.entries[lesson.id]}/>)}</div>:<div className="empty"><Search/><h3>没有符合条件的已选工位</h3><p>试试“泵”“PLC”或具体型号；尚未签核的工位可在预习模式查看。</p><button className="btn secondary" onClick={()=>{setActive(-1);setQuery('');setIncludeReview(true)}}>查看所有建设工位</button></div>}
   </>
 }
 export function Roadmap({book}:{book:Book}) {
